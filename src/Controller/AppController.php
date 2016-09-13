@@ -31,73 +31,74 @@ use Smarty;
  */
 class AppController extends Controller {
 
-  public $viewClass = 'App\View\SmartyView';
-  public $smarty;
+    public $viewClass = 'App\View\SmartyView';
+    public $smarty;
 
-  public function __construct(\Cake\Network\Request $request = null, \Cake\Network\Response $response = null, $name = null, $eventManager = null, $components = null) {
-    parent::__construct($request, $response, $name, $eventManager, $components);
+    public function __construct(\Cake\Network\Request $request = null, \Cake\Network\Response $response = null, $name = null, $eventManager = null, $components = null) {
+        parent::__construct($request, $response, $name, $eventManager, $components);
 
-    $this->smarty = new Smarty();
-    $this->smarty->cache_lifetime = 120;
-    $this->smarty->caching = false;
-    $this->smarty->setTemplateDir([APP . 'Template' . DS]);
+        $this->smarty = new Smarty();
+        $this->smarty->cache_lifetime = 120;
+        $this->smarty->caching = false;
+        $this->smarty->setTemplateDir([APP . 'Template' . DS]);
 
-    //Data no padrão correto
-    Type::build('date')->setLocaleFormat('yyyy-MM-dd');
-  }
-
-  /**
-   * Initialization hook method.
-   *
-   * Use this method to add common initialization code like loading components.
-   *
-   * e.g. `$this->loadComponent('Security');`
-   *
-   * @return void
-   */
-  public function initialize() {
-    parent::initialize();
-
-    $this->loadComponent('RequestHandler');
-    $this->loadComponent('Flash');
-
-    $this->loadComponent('Auth', array(
-      'loginRedirect' => [
-        'controller' => 'dashboard',
-        'action' => 'index'
-      ],
-      'logoutRedirect' => [
-        'controller' => 'Homepage',
-        'action' => 'index',
-        'home'
-    ]));
-  }
-
-  public function setAlert($type, $msg) {
-    $message = array(
-      'msg' => $msg,
-      'type' => $type
-    );
-    $_SESSION['message'] = $message;
-  }
-
-  /**
-   * Before render callback.
-   *
-   * @param \Cake\Event\Event $event The beforeRender event.
-   * @return void
-   */
-  public function beforeRender(Event $event) {
-    if (!array_key_exists('_serialize', $this->viewVars) &&
-        in_array($this->response->type(), ['application/json', 'application/xml'])
-    ) {
-      $this->set('_serialize', true);
+        //Data no padrão correto
+        Type::build('date')->setLocaleFormat('yyyy-MM-dd');
     }
 
-    if (isset($_SESSION['message'])) {
-      $this->set('alertMessage', $_SESSION['message']);
-      unset($_SESSION['message']);
+    /**
+     * Initialization hook method.
+     *
+     * Use this method to add common initialization code like loading components.
+     *
+     * e.g. `$this->loadComponent('Security');`
+     *
+     * @return void
+     */
+    public function initialize() {
+        parent::initialize();
+
+        $this->loadComponent('RequestHandler');
+        $this->loadComponent('Flash');
+
+        $this->loadComponent('Auth', array(
+            'loginRedirect' => [
+                'controller' => 'dashboard',
+                'action' => 'index',
+                'home'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'Users',
+                'action' => 'login',
+                'home'
+        ]));
     }
-  }
+
+    public function setAlert($type, $msg) {
+        $message = array(
+            'msg' => $msg,
+            'type' => $type
+        );
+        $_SESSION['message'] = $message;
+    }
+
+    /**
+     * Before render callback.
+     *
+     * @param \Cake\Event\Event $event The beforeRender event.
+     * @return void
+     */
+    public function beforeRender(Event $event) {
+        if (!array_key_exists('_serialize', $this->viewVars) &&
+                in_array($this->response->type(), ['application/json', 'application/xml'])
+        ) {
+            $this->set('_serialize', true);
+        }
+
+        if (isset($_SESSION['message'])) {
+            $this->set('alertMessage', $_SESSION['message']);
+            unset($_SESSION['message']);
+        }
+    }
 
 }

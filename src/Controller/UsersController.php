@@ -49,7 +49,8 @@ class usersController extends AppController {
       $data = array(
         'id' => $user['id'],
         'name' => $user['name'],
-        'username' => $user['username']
+        'username' => $user['username'],
+        'tipo' => $user['tipo']
       );
       return $data;
     } else {

@@ -57,7 +57,7 @@
                                 <i class="fa fa-bars icon"></i>
                             </button>
                             <ol class="breadcrumb navbar-breadcrumb">
-                                <li class="active">Dashboard</li>
+                                <li class="active">SecureBox</li>
                             </ol>
                             <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
                                 <i class="fa fa-th icon"></i>
@@ -71,7 +71,7 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-comments-o"></i></a>
                                 <ul class="dropdown-menu animated fadeInDown">
                                     <li class="title">
-                                        Notificações <span class="badge pull-right">0</span>
+                                        Notificacao <span class="badge pull-right">0</span>
                                     </li>
                                     <li class="message">
                                         Mensagens

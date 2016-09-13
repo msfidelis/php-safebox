@@ -4,7 +4,7 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">
                     <div class="icon fa fa-pied-piper-alt"></div>
-                    <div class="title">Dashboard</div>
+                    <div class="title">SecureBox</div>
                 </a>
                 <button type="button" class="navbar-expand-toggle pull-right visible-xs">
                     <i class="fa fa-times icon"></i>
@@ -13,7 +13,7 @@
             <ul class="nav navbar-nav">
                 <li class="active">
                     <a href="/dashboard">
-                        <span class="icon fa fa-tachometer"></span><span class="title">Dashboard</span>
+                        <span class="icon fa fa-tachometer"></span><span class="title">SecureBox</span>
                     </a>
                 </li>
                 <li class="panel panel-default dropdown">

@@ -217,8 +217,8 @@ return [
        */
       //'port' => 'non_standard_port_number',
       'username' => 'root',
-      'password' => '',
-      'database' => 'example',
+      'password' => 'root',
+      'database' => 'securebox',
       'encoding' => 'utf8',
       'timezone' => 'UTC',
       'flags' => [],

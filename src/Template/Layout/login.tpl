@@ -1,5 +1,5 @@
 <head>
-    <title>DeaSoft - Serviço de Gerenciamento de Salão de Beleza</title>
+    <title>SecureBox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Utils -->
 
