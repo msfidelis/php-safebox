@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-09-14 16:57:03
+/* Smarty version 3.1.29, created on 2016-09-14 17:13:19
   from "/home/matheus/Sites/securebox/app/src/Template/Element/Navbar/navbar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57d9815f3dbb81_24703484',
+  'unifunc' => 'content_57d9852f8816b4_22539853',
   'file_dependency' => 
   array (
     '51724bc2e4aa7fc02855b292dd49ab29eac7193c' => 
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57d9815f3dbb81_24703484 ($_smarty_tpl) {
+function content_57d9852f8816b4_22539853 ($_smarty_tpl) {
 ?>
 <div class="side-menu sidebar-inverse">
     <nav class="navbar navbar-default" role="navigation">

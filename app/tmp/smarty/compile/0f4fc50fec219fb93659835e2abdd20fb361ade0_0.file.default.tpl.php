@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-09-14 16:57:03
+/* Smarty version 3.1.29, created on 2016-09-14 17:13:19
   from "/home/matheus/Sites/securebox/app/src/Template/Layout/default.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57d9815f3b7688_97604524',
+  'unifunc' => 'content_57d9852f85d370_02878106',
   'file_dependency' => 
   array (
     '0f4fc50fec219fb93659835e2abdd20fb361ade0' => 
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57d9815f3b7688_97604524 ($_smarty_tpl) {
+function content_57d9852f85d370_02878106 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>

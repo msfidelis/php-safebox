@@ -51,8 +51,11 @@
             <div id="return">
 
             </div>
-            <div class="modal-body image-responsive">
+            <div class="modal-body image-responsive" id='image'>
                 <img src="/images/cadeado.png" style="height: 200px; width: 200px; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="modal-body image-responsive" style="display: none" id='loading'>
+                <img src="/images/loading.gif" style="height: 200px; width: 200px; display: block; margin-left: auto; margin-right: auto;">
             </div>
             <div>
                 <div class="alert alert-danger alert-dismissible fade in" role="alert">
