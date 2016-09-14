@@ -46,7 +46,6 @@ if (isset($modelObject) && $modelObject->behaviors()->has('Tree')) {
                         {$this->Form->create($<?= $singularVar ?>)}
                         <fieldset>
                             <legend>{__('<?= Inflector::humanize($action) ?> <?= $singularHumanName ?>')}</legend>
-                            <CakePHPBakeOpenTagphp
                             <?php
                             foreach ($fields as $field) {
                               if (in_array($field, $primaryKey)) {

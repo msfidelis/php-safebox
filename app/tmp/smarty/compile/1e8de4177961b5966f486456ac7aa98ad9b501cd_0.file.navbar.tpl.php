@@ -1,3 +1,26 @@
+<?php
+/* Smarty version 3.1.29, created on 2016-09-14 02:31:32
+  from "/Users/fidelis/Sites/PHP-SafeBox/app/src/Template/Element/Navbar/navbar.tpl" */
+
+if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
+  'has_nocache_code' => false,
+  'version' => '3.1.29',
+  'unifunc' => 'content_57d8b68451da59_94032113',
+  'file_dependency' => 
+  array (
+    '1e8de4177961b5966f486456ac7aa98ad9b501cd' => 
+    array (
+      0 => '/Users/fidelis/Sites/PHP-SafeBox/app/src/Template/Element/Navbar/navbar.tpl',
+      1 => 1473815650,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_57d8b68451da59_94032113 ($_smarty_tpl) {
+?>
 <div class="side-menu sidebar-inverse">
     <nav class="navbar navbar-default" role="navigation">
         <div class="side-menu-container">
@@ -32,7 +55,7 @@
                         </div>
                     </div>
                 </li>
-                {if $smarty.session.Auth.User.tipo eq 1}
+                <?php if ($_SESSION['Auth']['User']['tipo'] == 1) {?>
                     <li class="panel panel-default dropdown">
                         <a data-toggle="collapse" href="#dropdown-form">
                             <span class="icon fa fa-file-text-o"></span><span class="title">Menu Admin</span>
@@ -51,9 +74,10 @@
                             </div>
                         </div>
                     </li>
-                {/if}
+                <?php }?>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-</div>
+</div><?php }
+}

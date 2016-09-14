@@ -45,3 +45,278 @@ Stack Trace:
 2016-09-13 19:20:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2016-09-13 19:20:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2016-09-13 19:20:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 00:55:56 Error: [PDOException] SQLSTATE[HY000] [1049] Unknown database 'securebox'
+Request URL: /users/login
+Referer URL: http://local.securebox.com/users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Connection.php(317): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Table.php(428): Cake\Database\Connection->schemaCollection()
+#8 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Query.php(211): Cake\ORM\Table->schema()
+#9 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#10 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Table.php(1242): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#11 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Table.php(945): Cake\ORM\Table->query()
+#12 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/UsersController.php(46): Cake\ORM\Table->find()
+#13 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/UsersController.php(25): App\Controller\usersController->validaUsuario(Array)
+#14 [internal function]: App\Controller\usersController->login()
+#15 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#16 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#17 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\usersController))
+#18 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#19 {main}
+
+
+2016-09-14 00:59:33 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'securebox.funcoes' doesn't exist
+Request URL: /usuarios
+Referer URL: http://local.securebox.com/dashboard
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Query.php(921): Cake\Database\Query->execute()
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(272): Cake\ORM\Query->_execute()
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Query.php(871): Cake\ORM\Query->_all()
+#8 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(131): Cake\ORM\Query->all()
+#9 /Users/fidelis/Sites/PHP-SafeBox/app/tmp/smarty/compile/443e41f960526d8c56e143574728ee630a8a29b9_0.file.index.tpl.php(69): Cake\ORM\Query->getIterator()
+#10 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(122): content_57d8a0f4df4de9_91005183(Object(Smarty_Internal_Template))
+#11 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(199): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#12 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(159): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#13 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(191): Smarty_Internal_Template->render(false, 0)
+#14 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(94): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#15 /Users/fidelis/Sites/PHP-SafeBox/app/src/View/SmartyView.php(73): Smarty_Internal_TemplateBase->fetch('/Users/fidelis/...')
+#16 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(952): App\View\SmartyView->_evaluate('/Users/fidelis/...', Array)
+#17 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/fidelis/...')
+#18 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#19 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#20 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\usuariosController))
+#21 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#22 {main}
+
+
+2016-09-14 01:01:01 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'securebox.funcoes' doesn't exist
+Request URL: /usuarios/add
+Referer URL: http://local.securebox.com/usuarios
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'funcoes', Array, Object(Cake\Database\Schema\Table))
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('funcoes', Array)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Table.php(429): Cake\Database\Schema\CachedCollection->describe('funcoes')
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Query.php(211): Cake\ORM\Table->schema()
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\FuncoesTable))
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Table.php(1242): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\FuncoesTable))
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Table.php(945): Cake\ORM\Table->query()
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/Components/Usuarios/usuariosRenderClass.php(24): Cake\ORM\Table->find('all', Array)
+#8 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/UsuariosController.php(42): App\Controller\Components\Usuarios\usuariosRenderClass->renderFuncoes()
+#9 [internal function]: App\Controller\usuariosController->add()
+#10 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#11 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\usuariosController))
+#13 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2016-09-14 01:05:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`securebox`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`tipo`) REFERENCES `funcoes` (`id`))
+Request URL: /usuarios/add
+Referer URL: http://local.securebox.com/usuarios/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Table.php(1544): Cake\Database\Query->execute()
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Table.php(1460): Cake\ORM\Table->_insert(Object(App\Model\Entity\User), Array)
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Table.php(1391): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#8 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Table.php(1392): Cake\Database\Connection->transactional(Object(Closure))
+#10 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/Components/Usuarios/usuariosSaveClass.php(32): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#11 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/UsuariosController.php(36): App\Controller\Components\Usuarios\usuariosSaveClass->addNew(Array)
+#12 [internal function]: App\Controller\usuariosController->add()
+#13 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#14 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\usuariosController))
+#16 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-09-14 01:11:23 Error: [SmartyCompilerException] Syntax error in template "file:/Users/fidelis/Sites/PHP-SafeBox/app/src/Template/Element/Navbar/navbar.tpl"  on line 55 "{/if]"  - Unexpected "]", expected one of: "}"
+Request URL: /usuarios
+Referer URL: http://local.securebox.com/usuarios/edit/5
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php(2730): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php(2789): Smarty_Internal_Templateparser->yy_syntax_error(53, ']')
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(53, ']')
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php(392): Smarty_Internal_SmartyTemplateCompiler->doCompile('<div class="sid...', true)
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php(328): Smarty_Internal_TemplateCompilerBase->compileTemplateSource(Object(Smarty_Internal_Template), false, NULL)
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(236): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(123): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(193): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#8 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(159): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#9 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(191): Smarty_Internal_Template->render(false, 0)
+#10 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(94): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#11 /Users/fidelis/Sites/PHP-SafeBox/app/src/View/SmartyView.php(73): Smarty_Internal_TemplateBase->fetch('/Users/fidelis/...')
+#12 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(952): App\View\SmartyView->_evaluate('/Users/fidelis/...', Array)
+#13 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(1329): Cake\View\View->_render('/Users/fidelis/...', Array)
+#14 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(493): Cake\View\View->_renderElement('/Users/fidelis/...', Array, Array)
+#15 /Users/fidelis/Sites/PHP-SafeBox/app/tmp/smarty/compile/eb27278879cee196b429d90a5bf5accb4d1053d1_0.file.default.tpl.php(137): Cake\View\View->element('Navbar/navbar')
+#16 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(122): content_57d8a3bb258ac5_20951010(Object(Smarty_Internal_Template))
+#17 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(199): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#18 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(159): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#19 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(191): Smarty_Internal_Template->render(false, 0)
+#20 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(94): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#21 /Users/fidelis/Sites/PHP-SafeBox/app/src/View/SmartyView.php(73): Smarty_Internal_TemplateBase->fetch('/Users/fidelis/...')
+#22 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(952): App\View\SmartyView->_evaluate('/Users/fidelis/...', Array)
+#23 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(633): Cake\View\View->_render('/Users/fidelis/...')
+#24 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(592): Cake\View\View->renderLayout('', 'default')
+#25 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#26 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#27 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\usuariosController))
+#28 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#29 {main}
+
+
+2016-09-14 01:29:04 Error: [Error] Call to undefined method App\Controller\usuariosController::validateAdmin()
+Request URL: /usuarios/edit/5
+Referer URL: http://local.securebox.com/usuarios
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventManager.php(386): App\Controller\usuariosController->beforeFilter(Object(Cake\Event\Event))
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventManager.php(356): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(491): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\usuariosController))
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-09-14 01:33:42 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /usuarios/edit/5
+Referer URL: http://local.securebox.com/usuarios
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/Users/fidelis/...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Usu...', 'App')
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(91): Cake\Core\App::className('Usuarios', 'Controller', 'Controller')
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(51): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#8 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventManager.php(390): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventManager.php(356): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#10 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#11 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#12 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 {main}
+
+
+2016-09-14 01:39:36 Error: [Error] Cannot use [] for reading
+Request URL: /usuarios/edit/5
+Referer URL: http://local.securebox.com/usuarios
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/UsuariosController.php(25): App\Controller\AppController->validadeAdmin()
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventManager.php(386): App\Controller\usuariosController->beforeFilter(Object(Cake\Event\Event))
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventManager.php(356): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(491): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\usuariosController))
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-09-14 01:40:58 Error: [ParseError] syntax error, unexpected ';'
+Request URL: /usuarios/edit/5
+Referer URL: http://local.securebox.com/usuarios
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/Users/fidelis/...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/UsuariosController.php(21): spl_autoload_call('App\\Controller\\...')
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/composer/ClassLoader.php(412): include('/Users/fidelis/...')
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/Users/fidelis/...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#8 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Usu...', 'App')
+#9 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(91): Cake\Core\App::className('Usuarios', 'Controller', 'Controller')
+#10 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(51): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#12 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventManager.php(390): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventManager.php(356): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#14 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#15 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#16 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-09-14 01:41:14 Error: [Error] Call to undefined function App\Controller\stdClass()
+Request URL: /usuarios/edit/5
+Referer URL: http://local.securebox.com/usuarios
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/UsuariosController.php(25): App\Controller\AppController->validadeAdmin()
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventManager.php(386): App\Controller\usuariosController->beforeFilter(Object(Cake\Event\Event))
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventManager.php(356): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(491): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\usuariosController))
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-09-14 02:26:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Transacos could not be found.
+Exception Attributes: array (
+  'class' => 'Transacos',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /transacos
+Referer URL: http://local.securebox.com/transacoes/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 02:29:07 Error: [SmartyCompilerException] Syntax error in template "file:/Users/fidelis/Sites/PHP-SafeBox/app/src/Template/Transacoes/add.tpl"  on line 27 "{$this->Form->input('dt_inicio', ['empty' => true, 'type' => 'text', 'class' => 'form-control', 'label' => 'Data Inicial']])}"  - Unexpected "]", expected one of: "","" , ")"
+Request URL: /transacoes/add
+Referer URL: http://local.securebox.com/transacoes
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php(2730): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php(2789): Smarty_Internal_Templateparser->yy_syntax_error(53, ']')
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(53, ']')
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php(392): Smarty_Internal_SmartyTemplateCompiler->doCompile('<div class="mat...', true)
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php(328): Smarty_Internal_TemplateCompilerBase->compileTemplateSource(Object(Smarty_Internal_Template), false, NULL)
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(236): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(123): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(193): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#8 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(159): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#9 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(191): Smarty_Internal_Template->render(false, 0)
+#10 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(94): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#11 /Users/fidelis/Sites/PHP-SafeBox/app/src/View/SmartyView.php(73): Smarty_Internal_TemplateBase->fetch('/Users/fidelis/...')
+#12 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(952): App\View\SmartyView->_evaluate('/Users/fidelis/...', Array)
+#13 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/fidelis/...')
+#14 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#15 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#16 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#17 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 {main}
+
+

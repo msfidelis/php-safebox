@@ -7,7 +7,7 @@
  */
 
 namespace App\Controller;
-
+use Cake\Event\Event;
 use App\Controller\AppController;
 use App\Controller\Components\Usuarios\usuariosRenderClass;
 use App\Controller\Components\Usuarios\usuariosSaveClass;
@@ -19,6 +19,10 @@ use App\Controller\Components\Usuarios\usuariosSaveClass;
  * @date    04/06/2016
  */
 class usuariosController extends AppController {
+
+  public function beforeFilter(Event $event) {
+    $this->validadeAdmin();
+  }
 
   public function index() {
     $class = new usuariosRenderClass();

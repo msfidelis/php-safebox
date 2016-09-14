@@ -31,74 +31,86 @@ use Smarty;
  */
 class AppController extends Controller {
 
-    public $viewClass = 'App\View\SmartyView';
-    public $smarty;
+  public $viewClass = 'App\View\SmartyView';
+  public $smarty;
 
-    public function __construct(\Cake\Network\Request $request = null, \Cake\Network\Response $response = null, $name = null, $eventManager = null, $components = null) {
-        parent::__construct($request, $response, $name, $eventManager, $components);
+  public function __construct(\Cake\Network\Request $request = null, \Cake\Network\Response $response = null, $name = null, $eventManager = null, $components = null) {
+    parent::__construct($request, $response, $name, $eventManager, $components);
 
-        $this->smarty = new Smarty();
-        $this->smarty->cache_lifetime = 120;
-        $this->smarty->caching = false;
-        $this->smarty->setTemplateDir([APP . 'Template' . DS]);
+    $this->smarty = new Smarty();
+    $this->smarty->cache_lifetime = 120;
+    $this->smarty->caching = false;
+    $this->smarty->setTemplateDir([APP . 'Template' . DS]);
 
-        //Data no padrão correto
-        Type::build('date')->setLocaleFormat('yyyy-MM-dd');
+    //Data no padrão correto
+    Type::build('date')->setLocaleFormat('yyyy-MM-dd');
+  }
+
+  /**
+   * Initialization hook method.
+   *
+   * Use this method to add common initialization code like loading components.
+   *
+   * e.g. `$this->loadComponent('Security');`
+   *
+   * @return void
+   */
+  public function initialize() {
+    parent::initialize();
+
+    $this->loadComponent('RequestHandler');
+    $this->loadComponent('Flash');
+
+    $this->loadComponent('Auth', array(
+      'loginRedirect' => [
+        'controller' => 'dashboard',
+        'action' => 'index',
+        'home'
+      ],
+      'logoutRedirect' => [
+        'controller' => 'Users',
+        'action' => 'login',
+        'home'
+    ]));
+  }
+
+  public function setAlert($type, $msg) {
+    $message = array(
+      'msg' => $msg,
+      'type' => $type
+    );
+    $_SESSION['message'] = $message;
+  }
+
+  /**
+   * Before render callback.
+   *
+   * @param \Cake\Event\Event $event The beforeRender event.
+   * @return void
+   */
+  public function beforeRender(Event $event) {
+    if (!array_key_exists('_serialize', $this->viewVars) &&
+        in_array($this->response->type(), ['application/json', 'application/xml'])
+    ) {
+      $this->set('_serialize', true);
     }
 
-    /**
-     * Initialization hook method.
-     *
-     * Use this method to add common initialization code like loading components.
-     *
-     * e.g. `$this->loadComponent('Security');`
-     *
-     * @return void
-     */
-    public function initialize() {
-        parent::initialize();
-
-        $this->loadComponent('RequestHandler');
-        $this->loadComponent('Flash');
-
-        $this->loadComponent('Auth', array(
-            'loginRedirect' => [
-                'controller' => 'dashboard',
-                'action' => 'index',
-                'home'
-            ],
-            'logoutRedirect' => [
-                'controller' => 'Users',
-                'action' => 'login',
-                'home'
-        ]));
+    if (isset($_SESSION['message'])) {
+      $this->set('alertMessage', $_SESSION['message']);
+      unset($_SESSION['message']);
     }
+  }
 
-    public function setAlert($type, $msg) {
-        $message = array(
-            'msg' => $msg,
-            'type' => $type
-        );
-        $_SESSION['message'] = $message;
+  /**
+   * Valida se o usuário que está fazendo o request é um admin. Caso não seja
+   * Ele destroi a sessão e envia o usuário para a tela de login.
+   * @implementar futuramente - Contador de bloqueio
+   */
+  protected function validadeAdmin() {
+    $user = (object) $this->Auth->user();
+    if ((!isset($user->tipo)) || ($user->tipo != 1)) {
+      $this->redirect($this->Auth->logout());
     }
-
-    /**
-     * Before render callback.
-     *
-     * @param \Cake\Event\Event $event The beforeRender event.
-     * @return void
-     */
-    public function beforeRender(Event $event) {
-        if (!array_key_exists('_serialize', $this->viewVars) &&
-                in_array($this->response->type(), ['application/json', 'application/xml'])
-        ) {
-            $this->set('_serialize', true);
-        }
-
-        if (isset($_SESSION['message'])) {
-            $this->set('alertMessage', $_SESSION['message']);
-            unset($_SESSION['message']);
-        }
-    }
+  }
 
 }

@@ -17,18 +17,10 @@ class usuariosRenderClass extends Action {
    * Renderiza os registros do combo de funções
    */
   public function renderFuncoes() {
-    $this->controller->loadModel('Funcoes');
-    $where = 'stat = 1';
-    $fields = array('id', 'descricao');
-    $funcoes = $this->controller->Funcoes->find('all', array(
-          'fields' => $fields))->where($where);
-
-    $array = array();
-    foreach ($funcoes as $funcao) {
-      $array[$funcao->id] = $funcao->descricao;
-    }
-
-    return $array;
+    return array(
+      1 => 'Administrador', 
+      2 => 'Cliente'
+    );
   }
 
   public function getUsuariosData($where = null) {
@@ -50,14 +42,8 @@ class usuariosRenderClass extends Action {
   private function getUsersWithJoins() {
     $this->controller->loadModel('Users');
     return $this->controller->Users->find()->select([
-          'funcao' => 'f.descricao',
           'id', 'NAME', 'email', 'PASSWORD', 'created', 'modified',
-        ])->join([
-          'table' => 'funcoes',
-          'alias' => 'f',
-          'type' => 'LEFT',
-          'conditions' => 'Users.tipo = f.id']
-        )->where($this->where);
+        ])->where($this->where);
   }
 
   private function getRegister($id) {

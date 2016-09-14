@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-09-13 19:20:32
-  from "/home/matheus/Sites/securebox/app/src/Template/Layout/default.tpl" */
+/* Smarty version 3.1.29, created on 2016-09-14 02:31:32
+  from "/Users/fidelis/Sites/PHP-SafeBox/app/src/Template/Layout/default.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57d85180b485f1_84767845',
+  'unifunc' => 'content_57d8b6844af472_92996997',
   'file_dependency' => 
   array (
-    '0f4fc50fec219fb93659835e2abdd20fb361ade0' => 
+    'eb27278879cee196b429d90a5bf5accb4d1053d1' => 
     array (
-      0 => '/home/matheus/Sites/securebox/app/src/Template/Layout/default.tpl',
-      1 => 1473790574,
+      0 => '/Users/fidelis/Sites/PHP-SafeBox/app/src/Template/Layout/default.tpl',
+      1 => 1473814067,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57d85180b485f1_84767845 ($_smarty_tpl) {
+function content_57d8b6844af472_92996997 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>

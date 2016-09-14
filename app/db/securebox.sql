@@ -34,9 +34,7 @@ CREATE TABLE `users` (
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`),
-  UNIQUE KEY `username` (`username`),
-  KEY `tipo` (`tipo`),
-  CONSTRAINT `users_ibfk_1` FOREIGN KEY (`tipo`) REFERENCES `funcoes` (`id`)
+  UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
