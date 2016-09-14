@@ -17,6 +17,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\Time $dt_fim
  * @property \Cake\I18n\Time $created
  * @property \Cake\I18n\Time $modified
+ * @property string|resource $encfile
  */
 class Transaco extends Entity
 {

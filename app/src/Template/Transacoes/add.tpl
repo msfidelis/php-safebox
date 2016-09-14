@@ -19,8 +19,8 @@
                         <fieldset>
                             <legend>{__('Add Transaco')}</legend>
                             {$this->Form->input('descricao', ['class' => 'form-control'])}
-                            {$this->Form->input('id_cliente', ['class' => 'form-control', 'label' => 'Cliente'])}
-                            {$this->Form->input('id_mediador', ['class' => 'form-control', 'label' => 'Mediador'])}
+                            {$this->Form->input('id_cliente', ['class' => 'form-control', 'label' => 'Cliente', 'type' => 'select', 'options' => $clientes])}
+                            {$this->Form->input('id_mediador', ['class' => 'form-control', 'label' => 'Mediador', 'type' => 'select', 'options' => $mediadores])}
                             {$this->Form->input('aes_key', ['class' => 'form-control'])}
                             {$this->Form->input('gpg_key', ['class' => 'form-control'])}
                             {$this->Form->input('dt_inicio', ['empty' => true, 'type' => 'text', 'class' => 'form-control', 'label' => 'Data Inicial'])}

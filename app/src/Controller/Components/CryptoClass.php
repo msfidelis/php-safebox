@@ -7,22 +7,23 @@
  */
 
 namespace App\Controller\Components;
+use Cake\Crypto\Crypto;
 use Cake\Utility\Security;
 
 /**
  * @author  Matheus Scarpato Fidelis
- * @email   matheus.fidelis@industriafox.com
- * @date    04/06/2016
+ * @email   msfidelis01@gmail.com
+ * @date    12/09/2016
  */
-class CryptoClass {
-  
-  public function generateHash($text) {
-    return $this->crypherPlainText($text);
-  }
+class CryptoClass extends Crypto {
 
-  private function crypherPlainText($plain) {
-    $key = Security::salt();
-    return Security::hash($plain, 'sha256', $key);
-  }
+    public function generateHash($text) {
+        return $this->crypherPlainText($text);
+    }
+
+    private function crypherPlainText($plain) {
+        $key = Security::salt();
+        return Security::hash($plain, 'sha256', $key);
+    }
 
 }

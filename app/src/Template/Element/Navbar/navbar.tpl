@@ -41,12 +41,8 @@
                         <div id="dropdown-form" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="/clientes">Clientes</a></li>
-                                    <li><a href="/materiais">Materiais</a></li>
-                                    <li><a href="/servicos">Servicos</a></li>
-                                    <li><a href="/estoques">Estoque</a></li>
-                                    <li><a href="/funcoes">Funções</a></li>
-                                    <li><a href="/usuarios">Usuarios</a></li>
+                                    <li><a href="/transacoes">Gerencia de Transacoes</a></li>
+                                    <li><a href="/usuarios">Gerencia de Usuarios</a></li>
                                 </ul>
                             </div>
                         </div>

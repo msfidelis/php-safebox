@@ -49,13 +49,11 @@ class TransacoesTable extends Table
 
         $validator
             ->integer('id_cliente')
-            ->requirePresence('id_cliente', 'create')
-            ->notEmpty('id_cliente');
+            ->allowEmpty('id_cliente');
 
         $validator
             ->integer('id_mediador')
-            ->requirePresence('id_mediador', 'create')
-            ->notEmpty('id_mediador');
+            ->allowEmpty('id_mediador');
 
         $validator
             ->allowEmpty('aes_key');
@@ -73,6 +71,9 @@ class TransacoesTable extends Table
         $validator
             ->dateTime('dt_fim')
             ->allowEmpty('dt_fim');
+
+        $validator
+            ->allowEmpty('encfile');
 
         return $validator;
     }

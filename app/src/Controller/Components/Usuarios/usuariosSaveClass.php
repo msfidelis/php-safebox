@@ -9,6 +9,7 @@
 namespace App\Controller\Components\Usuarios;
 
 use Cake\Controller\Action;
+use Cake\Crypto\EncryptSSL;
 use App\Controller\Components\CryptoClass;
 use App\Controller\Components\Usuarios\usuariosRenderClass;
 
@@ -38,8 +39,8 @@ class usuariosSaveClass extends Action {
     }
   }
 
-  public function updUser(array $array, $users) {
-    $data = $this->trataDados($array);
+  public function updUser(array $array, $users, $id) {
+    $data = $this->trataDados($array, $id);
     $this->controller->loadModel('Users');
     $users = $this->controller->Users->patchEntity($users, $data);
     if ($this->controller->Users->save($users)) {
@@ -74,7 +75,7 @@ class usuariosSaveClass extends Action {
     );
   }
 
-  private function trataDados($data) {
+  private function trataDados($data, $id = null) {
     $array = array(
       'NAME' => $data['NAME'],
       'email' => $data['email'],
@@ -82,6 +83,12 @@ class usuariosSaveClass extends Action {
       'tipo' => $data['tipo'],
       'stat' => 1
     );
+    
+    if (is_null($id)) {
+        $dataKeys = (new EncryptSSL())->generataPair();
+        $array += $dataKeys;
+    }
+    
 
     if (!empty($data['password'])) {
       $crypt = new CryptoClass;

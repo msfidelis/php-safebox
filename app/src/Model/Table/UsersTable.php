@@ -81,5 +81,15 @@ class UsersTable extends Table {
     $rules->add($rules->isUnique(['username']));
     return $rules;
   }
+  
+  public function findClientes() {
+    $where = "tipo = 2";
+    return $this->find('All')->where($where);
+  }
+  
+  public function findMediadores() {
+    $where = "tipo = 1";
+    return $this->find('All')->where($where);
+  }
 
 }

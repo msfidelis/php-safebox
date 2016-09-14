@@ -20,40 +20,6 @@ $(document).ready(function () {
             $('#showAlert').hide('slow');
         }, 4000);
     });
-
-    $('#busca_navegacao').autocomplete({
-        source: "/navegacao/getNavegacao/termo/",
-        minLength: 1,
-        select: function (event, ui) {
-            window.location.href = ui.item.url;
-        }
-    });
-
-    //onchange empresa do sistema
-    $('#nav_id_empresa').change(function () {
-        var empresa = $('#nav_id_empresa').val();
-        $('#nav_id_empresa').attr('disabled', 'disabled');
-        $('#nav_id_empresa').find(":selected").text("ALTERANDO...");
-        $.ajax({
-            url: "/empresa/mudar_empresa/empresa/" + empresa,
-            async: true,
-            complete: function (event, XMLHttpRequest) {
-                document.location.reload();
-            }
-        });
-        /*$.ajax({
-         url: "/empresa/mudar_empresa",
-         type: "post",
-         data: {
-         "empresa": empresa
-         },
-         async: true,
-         complete: function (event, XMLHttpRequest) {
-         document.location.reload();
-         }
-         });*/
-    });
-
 });
 
 function somenteFloat(obj) {

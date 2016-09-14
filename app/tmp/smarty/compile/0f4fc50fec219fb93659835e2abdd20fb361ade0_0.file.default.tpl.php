@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-09-14 02:31:32
-  from "/Users/fidelis/Sites/PHP-SafeBox/app/src/Template/Layout/default.tpl" */
+/* Smarty version 3.1.29, created on 2016-09-14 16:57:03
+  from "/home/matheus/Sites/securebox/app/src/Template/Layout/default.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57d8b6844af472_92996997',
+  'unifunc' => 'content_57d9815f3b7688_97604524',
   'file_dependency' => 
   array (
-    'eb27278879cee196b429d90a5bf5accb4d1053d1' => 
+    '0f4fc50fec219fb93659835e2abdd20fb361ade0' => 
     array (
-      0 => '/Users/fidelis/Sites/PHP-SafeBox/app/src/Template/Layout/default.tpl',
-      1 => 1473814067,
+      0 => '/home/matheus/Sites/securebox/app/src/Template/Layout/default.tpl',
+      1 => 1473857889,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57d8b6844af472_92996997 ($_smarty_tpl) {
+function content_57d9815f3b7688_97604524 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,13 +36,12 @@ function content_57d8b6844af472_92996997 ($_smarty_tpl) {
         <?php echo $_smarty_tpl->tpl_vars['this']->value->Html->meta('icon');?>
 
 
-        <?php echo $_smarty_tpl->tpl_vars['this']->value->Html->css(array('/flat/css/bootstrap.min.css','/flat/css/font-awesome.min.css','/flat/css/animate.min.css','/flat/css/bootstrap-switch.min.css','/flat/css/dataTables.bootstrap.css','/flat/css/checkbox3.min.css','/css/jquery-ui.css','/flat/css/dataTables.bootstrap.css','/flat/css/select2.min.css','/flat/css/style.css','/flat/css/themes.css','/js/toast/src/main/resources/css/jquery.toastmessage.css','/flat/css/themes/flat-green.css'));?>
+        <?php echo $_smarty_tpl->tpl_vars['this']->value->Html->css(array('/flat/css/bootstrap.min.css','/flat/css/font-awesome.min.css','/flat/css/animate.min.css','/flat/css/bootstrap-switch.min.css','/flat/css/dataTables.bootstrap.css','/flat/css/checkbox3.min.css','/css/jquery-ui.css','/flat/css/dataTables.bootstrap.css','/flat/css/select2.min.css','/flat/css/style.css','/flat/css/themes.css','/js/toast/src/main/resources/css/jquery.toastmessage.css','/css/jquery.datetimepicker.min.css','/flat/css/themes/flat-green.css'));?>
 
 
 
 
-        <?php echo $_smarty_tpl->tpl_vars['this']->value->Html->script(array('/js/jquery.min.js','/js/bootstrap.min.js','/flat/js/Chart.min.js','/flat/js/bootstrap-switch.min.js','/flat/js/jquery.matchHeight-min.js','/flat/js/jquery.dataTables.min.js','/js/jquery-ui.js','/js/masks.js','/js/toast/src/main/javascript/jquery.toastmessage.js','/flat/js/dataTables.bootstrap.min.js','/flat/js/select2.full.min.js','/flat/js/ace.js','/flat/js/app.js','/flat/js/mode-html.js','/flat/js/theme-github.js'));?>
-
+        <?php echo $_smarty_tpl->tpl_vars['this']->value->Html->script(array('/js/jquery.min.js','/js/bootstrap.min.js','/flat/js/Chart.min.js','/flat/js/bootstrap-switch.min.js','/flat/js/jquery.matchHeight-min.js','/flat/js/jquery.dataTables.min.js','/js/jquery-ui.js','/js/masks.js','/js/toast/src/main/javascript/jquery.toastmessage.js','/js/jquery.datetimepicker.full.js','/flat/js/dataTables.bootstrap.min.js','/flat/js/select2.full.min.js','/flat/js/ace.js','/flat/js/app.js','/flat/js/mode-html.js','/flat/js/theme-github.js'));?>
 
 
     </head>

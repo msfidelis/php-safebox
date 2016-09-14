@@ -66,7 +66,7 @@ class usuariosController extends AppController {
     $funcoes = $renderClass->renderFuncoes();
     if ($this->request->is(['patch', 'post', 'put'])) {
       $saveClass = new usuariosSaveClass();
-      if ($saveClass->updUser($this->request->data, $user)) {
+      if ($saveClass->updUser($this->request->data, $user, $id)) {
         return $this->redirect(['action' => 'index']);
       }
     }

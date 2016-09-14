@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-09-14 02:31:32
-  from "/Users/fidelis/Sites/PHP-SafeBox/app/src/Template/Element/Navbar/navbar.tpl" */
+/* Smarty version 3.1.29, created on 2016-09-14 16:57:03
+  from "/home/matheus/Sites/securebox/app/src/Template/Element/Navbar/navbar.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57d8b68451da59_94032113',
+  'unifunc' => 'content_57d9815f3dbb81_24703484',
   'file_dependency' => 
   array (
-    '1e8de4177961b5966f486456ac7aa98ad9b501cd' => 
+    '51724bc2e4aa7fc02855b292dd49ab29eac7193c' => 
     array (
-      0 => '/Users/fidelis/Sites/PHP-SafeBox/app/src/Template/Element/Navbar/navbar.tpl',
-      1 => 1473815650,
+      0 => '/home/matheus/Sites/securebox/app/src/Template/Element/Navbar/navbar.tpl',
+      1 => 1473868431,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57d8b68451da59_94032113 ($_smarty_tpl) {
+function content_57d9815f3dbb81_24703484 ($_smarty_tpl) {
 ?>
 <div class="side-menu sidebar-inverse">
     <nav class="navbar navbar-default" role="navigation">
@@ -64,12 +64,8 @@ function content_57d8b68451da59_94032113 ($_smarty_tpl) {
                         <div id="dropdown-form" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="/clientes">Clientes</a></li>
-                                    <li><a href="/materiais">Materiais</a></li>
-                                    <li><a href="/servicos">Servicos</a></li>
-                                    <li><a href="/estoques">Estoque</a></li>
-                                    <li><a href="/funcoes">Funções</a></li>
-                                    <li><a href="/usuarios">Usuarios</a></li>
+                                    <li><a href="/transacoes">Gerencia de Transacoes</a></li>
+                                    <li><a href="/usuarios">Gerencia de Usuarios</a></li>
                                 </ul>
                             </div>
                         </div>

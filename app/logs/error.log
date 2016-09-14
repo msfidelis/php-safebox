@@ -320,3 +320,899 @@ Stack Trace:
 #18 {main}
 
 
+2016-09-14 11:04:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:04:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:04:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:04:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:04:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:04:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:07:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:07:38 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'securebox.transacoes' doesn't exist
+Request URL: /transacoes
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'transacoes', Array, Object(Cake\Database\Schema\Table))
+#1 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('transacoes', Array)
+#2 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/ORM/Table.php(429): Cake\Database\Schema\CachedCollection->describe('transacoes')
+#3 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/ORM/Query.php(211): Cake\ORM\Table->schema()
+#4 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/ORM/Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\TransacoesTable))
+#5 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/ORM/Table.php(1242): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\TransacoesTable))
+#6 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/ORM/Table.php(945): Cake\ORM\Table->query()
+#7 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#8 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\TransacoesTable), Array)
+#9 /home/matheus/Sites/securebox/app/src/Controller/TransacoesController.php(19): Cake\Controller\Controller->paginate(Object(App\Model\Table\TransacoesTable))
+#10 [internal function]: App\Controller\TransacoesController->index()
+#11 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#12 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#14 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2016-09-14 11:12:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:12:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:23:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:23:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:23:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:23:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:23:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:28:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:28:21 Error: Fatal Error (1): Call to undefined method App\Controller\Components\Usuarios\usuariosRenderClass::getClientes() in [/home/matheus/Sites/securebox/app/src/Controller/TransacoesController.php, line 46]
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-14 11:28:21 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Components\Usuarios\usuariosRenderClass::getClientes()
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/home/matheus/S...', 46)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-14 11:28:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:28:22 Error: Fatal Error (1): Call to undefined method App\Controller\Components\Usuarios\usuariosRenderClass::getClientes() in [/home/matheus/Sites/securebox/app/src/Controller/TransacoesController.php, line 46]
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-14 11:28:22 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Components\Usuarios\usuariosRenderClass::getClientes()
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/home/matheus/S...', 46)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-14 11:28:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:28:23 Error: Fatal Error (1): Call to undefined method App\Controller\Components\Usuarios\usuariosRenderClass::getClientes() in [/home/matheus/Sites/securebox/app/src/Controller/TransacoesController.php, line 46]
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-14 11:28:23 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Components\Usuarios\usuariosRenderClass::getClientes()
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/home/matheus/S...', 46)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-14 11:28:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:28:23 Error: Fatal Error (1): Call to undefined method App\Controller\Components\Usuarios\usuariosRenderClass::getClientes() in [/home/matheus/Sites/securebox/app/src/Controller/TransacoesController.php, line 46]
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-14 11:28:23 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Components\Usuarios\usuariosRenderClass::getClientes()
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/home/matheus/S...', 46)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-14 11:28:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:28:24 Error: Fatal Error (1): Call to undefined method App\Controller\Components\Usuarios\usuariosRenderClass::getClientes() in [/home/matheus/Sites/securebox/app/src/Controller/TransacoesController.php, line 46]
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-14 11:28:24 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Components\Usuarios\usuariosRenderClass::getClientes()
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/home/matheus/S...', 46)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-14 11:28:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:28:24 Error: Fatal Error (1): Call to undefined method App\Controller\Components\Usuarios\usuariosRenderClass::getClientes() in [/home/matheus/Sites/securebox/app/src/Controller/TransacoesController.php, line 46]
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-14 11:28:24 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\Components\Usuarios\usuariosRenderClass::getClientes()
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/home/matheus/S...', 46)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-14 11:28:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:29:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:38:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:39:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:39:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:40:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:40:24 Error: [SmartyCompilerException] Syntax error in template "file:/home/matheus/Sites/securebox/app/src/Template/Transacoes/add.tpl"  on line 23 "{$this->Form->input('id_mediador', ['class' => 'form-control', 'label' => 'Mediador', 'type' => 'select', 'options' => $clientes]])}"  - Unexpected "]", expected one of: "","" , ")"
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php(2730): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /home/matheus/Sites/securebox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php(2789): Smarty_Internal_Templateparser->yy_syntax_error(53, ']')
+#2 /home/matheus/Sites/securebox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(53, ']')
+#3 /home/matheus/Sites/securebox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php(392): Smarty_Internal_SmartyTemplateCompiler->doCompile('<div class="mat...', true)
+#4 /home/matheus/Sites/securebox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php(329): Smarty_Internal_TemplateCompilerBase->compileTemplateSource(Object(Smarty_Internal_Template), NULL, NULL)
+#5 /home/matheus/Sites/securebox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(236): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#6 /home/matheus/Sites/securebox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(123): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#7 /home/matheus/Sites/securebox/app/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(193): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#8 /home/matheus/Sites/securebox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(159): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#9 /home/matheus/Sites/securebox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(191): Smarty_Internal_Template->render(false, 0)
+#10 /home/matheus/Sites/securebox/app/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(94): Smarty_Internal_TemplateBase->_execute('/home/matheus/S...', NULL, NULL, NULL, 0)
+#11 /home/matheus/Sites/securebox/app/src/View/SmartyView.php(73): Smarty_Internal_TemplateBase->fetch('/home/matheus/S...')
+#12 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/View/View.php(952): App\View\SmartyView->_evaluate('/home/matheus/S...', Array)
+#13 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/home/matheus/S...')
+#14 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#15 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#16 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#17 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 {main}
+
+
+2016-09-14 11:40:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 11:41:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:17:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:17:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:17:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:17:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:17:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:17:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:17:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:18:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:18:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:18:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:18:22 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`securebox`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`tipo`) REFERENCES `funcoes` (`id`))
+Request URL: /usuarios/add
+Referer URL: http://localhost:9090/usuarios/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/ORM/Table.php(1544): Cake\Database\Query->execute()
+#4 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/ORM/Table.php(1460): Cake\ORM\Table->_insert(Object(App\Model\Entity\User), Array)
+#5 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/ORM/Table.php(1391): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#6 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Database/Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#7 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/ORM/Table.php(1392): Cake\Database\Connection->transactional(Object(Closure))
+#8 /home/matheus/Sites/securebox/app/src/Controller/Components/Usuarios/usuariosSaveClass.php(32): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#9 /home/matheus/Sites/securebox/app/src/Controller/UsuariosController.php(40): App\Controller\Components\Usuarios\usuariosSaveClass->addNew(Array)
+#10 [internal function]: App\Controller\usuariosController->add()
+#11 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#12 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\usuariosController))
+#14 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2016-09-14 12:20:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:20:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:20:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:20:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:20:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:20:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:20:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:23:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:24:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:24:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:24:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:24:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:24:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:24:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:24:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:26:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:26:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:26:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:41:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:41:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:42:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:42:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:42:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:42:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:42:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:42:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:42:15 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/view.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/view.tpl',
+)
+Request URL: /transacoes/view/1
+Referer URL: http://localhost:9090/transacoes
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-09-14 12:42:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:42:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:42:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:56:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:56:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:56:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /js/toast/src/main/resources/css/jquery.datetimepicker.min.css
+Referer URL: http://localhost:9090/transacoes/edit/1
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 12:56:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:56:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:56:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /js/toast/src/main/resources/css/jquery.datetimepicker.min.css
+Referer URL: http://localhost:9090/transacoes/edit/1
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 12:56:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:56:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /js/toast/src/main/resources/css/jquery.datetimepicker.min.css
+Referer URL: http://localhost:9090/transacoes/edit/1
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 12:56:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:56:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 12:57:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:57:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:57:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /js/toast/src/main/resources/css/jquery.datetimepicker.min.css
+Referer URL: http://localhost:9090/transacoes/edit/1
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 12:57:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:57:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 12:57:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:57:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:57:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /js/jquery.datetimepicker.min.css
+Referer URL: http://localhost:9090/transacoes/edit/1
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 12:57:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:57:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 12:57:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:57:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:57:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 12:59:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:59:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 12:59:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 13:02:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:02:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:02:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 13:02:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:02:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:02:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 13:02:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:02:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:02:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 13:03:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:03:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:03:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 13:04:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:04:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:04:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 13:04:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:04:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:04:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 13:07:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:07:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:07:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:07:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:08:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:08:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:08:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:08:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:10:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 13:11:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:25:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:25:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:25:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:25:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:25:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:25:40 Error: Fatal Error (1): Class 'Cake\Crypto\EncryptSSL' not found in [/home/matheus/Sites/securebox/app/src/Controller/Components/Transacoes/Validacoes.php, line 32]
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-14 14:25:40 Error: [Cake\Error\FatalErrorException] Class 'Cake\Crypto\EncryptSSL' not found
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'Cake\\Cry...', '/home/matheus/S...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-14 14:25:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:28:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:28:46 Error: Fatal Error (1): Class 'Cake\Crypto\EncryptSSL' not found in [/home/matheus/Sites/securebox/app/src/Controller/Components/Transacoes/Validacoes.php, line 32]
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-14 14:28:46 Error: [Cake\Error\FatalErrorException] Class 'Cake\Crypto\EncryptSSL' not found
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'Cake\\Cry...', '/home/matheus/S...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-14 14:29:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:29:28 Error: Fatal Error (1): Class 'Cake\Crypto\EncryptSSL' not found in [/home/matheus/Sites/securebox/app/src/Controller/Components/Transacoes/Validacoes.php, line 32]
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-14 14:29:28 Error: [Cake\Error\FatalErrorException] Class 'Cake\Crypto\EncryptSSL' not found
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'Cake\\Cry...', '/home/matheus/S...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-14 14:30:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:30:01 Error: Fatal Error (1): Class 'Cake\Crypto\EncryptSSL' not found in [/home/matheus/Sites/securebox/app/src/Controller/Components/Transacoes/Validacoes.php, line 32]
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-14 14:30:01 Error: [Cake\Error\FatalErrorException] Class 'Cake\Crypto\EncryptSSL' not found
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'Cake\\Cry...', '/home/matheus/S...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-14 14:30:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:30:42 Error: Fatal Error (1): Class 'Cake\Crypto\EncryptSSL' not found in [/home/matheus/Sites/securebox/app/src/Controller/Components/Transacoes/Validacoes.php, line 32]
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes/add
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-14 14:30:42 Error: [Cake\Error\FatalErrorException] Class 'Cake\Crypto\EncryptSSL' not found
+Request URL: /transacoes/add
+Referer URL: http://localhost:9090/transacoes/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'Cake\\Cry...', '/home/matheus/S...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-14 14:31:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:31:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:31:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:33:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:33:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:33:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:33:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:33:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:34:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:34:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:34:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:34:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:34:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:34:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:34:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:35:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:36:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:36:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:36:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:39:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:39:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:39:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:39:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:39:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:39:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:40:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:40:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:40:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:40:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:41:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:41:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:42:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:42:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:43:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:43:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:45:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:49:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:49:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:51:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:51:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 14:51:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:04:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:04:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:04:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:04:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:04:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:04:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:04:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:04:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:05:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:06:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:06:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:47:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:47:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:47:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:48:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:48:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:48:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:48:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:48:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:48:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:53:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:53:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:53:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:53:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:53:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 15:54:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:03:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:04:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:04:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:05:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:06:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:06:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:07:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:07:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:08:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:09:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:10:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:10:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:11:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:12:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:12:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:13:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:13:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:14:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:16:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:16:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:18:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:18:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:19:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:35:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:35:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:35:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:36:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:36:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:36:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 16:40:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:40:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:40:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 16:41:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:41:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:41:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 16:42:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:42:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:42:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 16:42:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:42:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:42:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:53:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:53:37 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/json/resetkey.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/json/resetkey.tpl',
+)
+Request URL: /transacoes/resetkey/
+Referer URL: http://localhost:9090/transacoes/edit/10
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /home/matheus/Sites/securebox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-09-14 16:55:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:56:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:56:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:56:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 16:56:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:57:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:57:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:57:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/matheus/Sites/securebox/app/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-09-14 16:57:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:57:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-09-14 16:57:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.

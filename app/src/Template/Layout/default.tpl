@@ -22,6 +22,7 @@
           '/flat/css/style.css',
           '/flat/css/themes.css',
           '/js/toast/src/main/resources/css/jquery.toastmessage.css',
+          '/css/jquery.datetimepicker.min.css',
           '/flat/css/themes/flat-green.css'
         ))}
 
@@ -37,6 +38,7 @@
           '/js/jquery-ui.js',
           '/js/masks.js',
           '/js/toast/src/main/javascript/jquery.toastmessage.js',
+          '/js/jquery.datetimepicker.full.js',
           '/flat/js/dataTables.bootstrap.min.js',
           '/flat/js/select2.full.min.js',
           '/flat/js/ace.js',
@@ -44,7 +46,6 @@
           '/flat/js/mode-html.js',
           '/flat/js/theme-github.js'
         ))}
-
 
     </head>
     <body class="flat-green">

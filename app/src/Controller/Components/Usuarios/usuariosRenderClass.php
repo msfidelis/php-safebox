@@ -52,5 +52,33 @@ class usuariosRenderClass extends Action {
       'contain' => []
     ]);
   }
+  
+  /**
+   * Monta o combo de clientes
+   * @return type array combo
+   */
+  public function getClientesCombo() {
+    $array = array();
+    $this->controller->loadModel('Users');
+    $clientes = $this->controller->Users->findClientes()->toArray();
+    
+    foreach ($clientes as $cliente) {
+        $array[$cliente['id']] = $cliente['NAME'];
+    }
+    return $array;
+  }
+  
+  /**
+   * Monta o combo do mediador
+   * @return type array combo
+   */
+  public function getMediadoresCombo() {
+    $this->controller->loadModel('Users');
+    $mediadores = $this->controller->Users->findMediadores()->toArray();
+    foreach ($mediadores as $mediador) {
+        $array[$mediador['id']] = $mediador['NAME'];
+    }
+    return $array;
+  }
 
 }
