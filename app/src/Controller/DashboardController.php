@@ -7,7 +7,7 @@
  */
 
 namespace App\Controller;
-
+use App\Controller\Components\Transacoes\Render;
 /**
  *
  * @author  Matheus Scarpato Fidelis
@@ -17,6 +17,16 @@ namespace App\Controller;
 class dashboardController extends AppController{
  
   public function index() {
+    $user_id = $this->Auth->user('id');
+    $transacoes = new Render();
+    $transacoes_pendentes_cli = $transacoes->renderTransacoesPendentes($user_id);
     
+    if ($this->Auth->user('tipo') === 1) {
+      $transacoes_pendentes_med = $transacoes->renderTransacoesPendentesMediador($user_id);
+      var_dump($transacoes_pendentes_med);
+    } else {
+      
+    }
+    var_dump($transacoes_pendentes_cli); die();
   }
 }
