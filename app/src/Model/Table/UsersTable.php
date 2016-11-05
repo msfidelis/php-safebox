@@ -81,15 +81,43 @@ class UsersTable extends Table {
     $rules->add($rules->isUnique(['username']));
     return $rules;
   }
-  
+
   public function findClientes() {
     $where = "tipo = 2";
     return $this->find('All')->where($where);
   }
-  
+
   public function findMediadores() {
     $where = "tipo = 1";
     return $this->find('All')->where($where);
+  }
+
+  /**
+   * Retorna a chave pública do usuário
+   * @param type $id_usuario
+   * @return type
+   */
+  public function getPublicKeyFromUser($id_usuario) {
+    $fields = array("pubkey");
+    $where = "id = $id_usuario";
+    return $this->find('All')
+            ->select($fields)
+            ->where($where)
+            ->first();
+  }
+
+  /**
+   * Retorna a chave pública do usuário
+   * @param type $id_usuario
+   * @return type
+   */
+  public function getPrivateKeyFromUser($id_usuario) {
+    $fields = array("privkey");
+    $where = "id = $id_usuario";
+    return $this->find('All')
+            ->select($fields)
+            ->where($where)
+            ->first();
   }
 
 }

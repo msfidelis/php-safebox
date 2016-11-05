@@ -1,3 +1,7 @@
 nbproject/*
 tmp/cache/*
 tmp/smarty/compile/*
+app/tmp/
+app/tmp/*
+tmp/
+tmp/*

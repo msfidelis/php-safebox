@@ -18,7 +18,7 @@
                     <div class="form-group">
                         {$this->Form->create($transaco)}
                         <fieldset>
-                            <legend>{__('Editar Transação')}</legend>
+                            <legend>{__('Editar TransaÃ§Ã£o')}</legend>
                             {$this->Form->input('descricao', ['class' => 'form-control'])}
                             {$this->Form->input('id_cliente', ['class' => 'form-control', 'label' => 'Cliente', 'type' => 'select', 'options' => $clientes])}
                             {$this->Form->input('id_mediador', ['class' => 'form-control', 'label' => 'Mediador', 'type' => 'select', 'options' => $mediadores])}
@@ -61,7 +61,7 @@
                 <div class="alert alert-danger alert-dismissible fade in" role="alert">
 
                     <h4 id="oh-snap!-you-got-an-error!">Cuidado!<a class="anchorjs-link" href="#oh-snap!-you-got-an-error!"><span class="anchorjs-icon"></span></a></h4>
-                    <p>Essa ação poderá inutilizar toda sua transação até o presente momento. Ao continuar uma nova chave de transação será enviada para o cliente. Deseja continuar?</p>
+                    <p>Essa aÃ§Ã£o poderÃ¡ inutilizar a transaÃ§Ã£o atÃ© o presente momento. Ao continuar uma nova chave de transaÃ§Ã£o serÃ¡ enviada para o cliente. Deseja continuar?</p>
                     <p>
                         <button type="button" class="btn btn-danger" onclick="resendKey(this);">Sim</button>
                         <button type="button" class="btn btn-link" data-dismiss="modal">Nao</button>

@@ -1292,3 +1292,952 @@ Stack Trace:
 #9 {main}
 
 
+2016-09-19 23:23:52 Error: [Cake\Controller\Exception\MissingActionException] Action TransacoesController::authTransacao() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TransacoesController',
+  'action' => 'authTransacao',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /transacoes/auth-transacao
+Referer URL: http://local.securebox.com/
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-09-20 00:01:53 Error: [Cake\Controller\Exception\MissingActionException] Action TransacoesController::authTransacao() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TransacoesController',
+  'action' => 'authTransacao',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /transacoes/auth-transacao
+Referer URL: http://local.securebox.com/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-09-20 00:02:30 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/auth_transacao_cliente.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/auth_transacao_cliente.tpl',
+)
+Request URL: /transacoes/auth-transacao-cliente
+Referer URL: http://local.securebox.com/
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/auth...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-09-20 01:06:55 Error: [Error] Call to a member function toArray() on null
+Request URL: /transacoes/authTransacaoCliente
+Referer URL: http://local.securebox.com/transacoes/authtransacaocliente
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/TransacoesController.php(94): App\Model\Table\TransacoesTable->validateTransaction(10, '123123123', 5)
+#1 [internal function]: App\Controller\TransacoesController->authtransacaocliente()
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-09-20 01:07:29 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/auth_transacao_cliente.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/auth_transacao_cliente.tpl',
+)
+Request URL: /transacoes/authTransacaoCliente
+Referer URL: http://local.securebox.com/transacoes/authtransacaocliente
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/auth...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-09-20 01:09:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dno8rDFXS' in 'where clause'
+Request URL: /transacoes/authTransacaoCliente
+Referer URL: http://local.securebox.com/transacoes/authtransacaocliente
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Query.php(921): Cake\Database\Query->execute()
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(272): Cake\ORM\Query->_execute()
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Query.php(871): Cake\ORM\Query->_all()
+#8 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(395): Cake\ORM\Query->all()
+#9 /Users/fidelis/Sites/PHP-SafeBox/app/src/Model/Table/TransacoesTable.php(147): Cake\ORM\Query->first()
+#10 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/TransacoesController.php(93): App\Model\Table\TransacoesTable->validateTransaction(10, 'dno8rDFXS#0j%gG...', 5)
+#11 [internal function]: App\Controller\TransacoesController->authtransacaocliente()
+#12 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#13 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#15 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-09-20 01:09:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dno8rDFXS' in 'where clause'
+Request URL: /transacoes/authTransacaoCliente
+Referer URL: http://local.securebox.com/transacoes/authtransacaocliente
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Query.php(921): Cake\Database\Query->execute()
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(272): Cake\ORM\Query->_execute()
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Query.php(871): Cake\ORM\Query->_all()
+#8 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(395): Cake\ORM\Query->all()
+#9 /Users/fidelis/Sites/PHP-SafeBox/app/src/Model/Table/TransacoesTable.php(147): Cake\ORM\Query->first()
+#10 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/TransacoesController.php(93): App\Model\Table\TransacoesTable->validateTransaction(10, 'dno8rDFXS#0j%gG...', 5)
+#11 [internal function]: App\Controller\TransacoesController->authtransacaocliente()
+#12 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#13 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#15 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-09-20 01:09:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'authtransacaocliente' in 'where clause'
+Request URL: /transacoes/authtransacaocliente
+Referer URL: http://local.securebox.com/transacoes/authtransacaocliente
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Query.php(921): Cake\Database\Query->execute()
+#6 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(272): Cake\ORM\Query->_execute()
+#7 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/ORM/Query.php(871): Cake\ORM\Query->_all()
+#8 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(395): Cake\ORM\Query->all()
+#9 /Users/fidelis/Sites/PHP-SafeBox/app/src/Model/Table/TransacoesTable.php(147): Cake\ORM\Query->first()
+#10 /Users/fidelis/Sites/PHP-SafeBox/app/src/Controller/TransacoesController.php(93): App\Model\Table\TransacoesTable->validateTransaction(10, 'authtransacaocl...', 5)
+#11 [internal function]: App\Controller\TransacoesController->authtransacaocliente()
+#12 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#13 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#15 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-09-20 01:10:39 Error: [Cake\Controller\Exception\MissingActionException] Action TransacoesController::form() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TransacoesController',
+  'action' => 'form',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /transacoes/form?id_transacao=10
+Referer URL: http://local.securebox.com/transacoes/authtransacaocliente
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-09-20 01:12:47 Error: [Cake\Controller\Exception\MissingActionException] Action TransacoesController::form() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TransacoesController',
+  'action' => 'form',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /transacoes/form?id_transacao=10
+Referer URL: http://local.securebox.com/transacoes/authtransacaocliente
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-11-05 15:25:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Agendas could not be found.
+Exception Attributes: array (
+  'class' => 'Agendas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /agendas/
+Referer URL: http://local.securebox.com/dashboard/index/home
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:28:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Agendas could not be found.
+Exception Attributes: array (
+  'class' => 'Agendas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /agendas/
+Referer URL: http://local.securebox.com/usuarios/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:31:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/10
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:31:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /js/Transacoes/services.js
+Referer URL: http://local.securebox.com/transacoes/edit/10
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:31:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/10
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:32:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:35:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:35:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /js/Transacoes/services.js
+Referer URL: http://local.securebox.com/transacoes/edit/10
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:35:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/10
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:35:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /js/Transacoes/services.js
+Referer URL: http://local.securebox.com/transacoes/edit/10
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:35:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/10
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:37:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:37:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:37:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/10
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:37:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/10
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:43:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/10
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:43:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:43:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/10
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:43:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:43:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:44:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:44:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:44:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:44:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:45:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:45:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:45:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:45:13 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:14 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:14 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:14 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:14 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:15 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:15 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:15 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:16 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:16 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:16 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:16 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:17 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:17 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:17 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:45:17 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:58:04 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:58:22 Error: [Cake\View\Exception\MissingTemplateException] Template file "Transacoes/ajax/edit.tpl" is missing.
+Exception Attributes: array (
+  'file' => 'Transacoes/ajax/edit.tpl',
+)
+Request URL: /transacoes/edit/12
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName('Transacoes/ajax...')
+#1 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/fidelis/Sites/PHP-SafeBox/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TransacoesController))
+#4 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-11-05 15:59:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:59:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 15:59:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 16:03:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 16:03:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Flat could not be found.
+Exception Attributes: array (
+  'class' => 'Flat',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /flat/css/bootstrap.min.css.map
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-11-05 16:03:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.securebox.com/transacoes/edit/12
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /Users/fidelis/Sites/PHP-SafeBox/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+

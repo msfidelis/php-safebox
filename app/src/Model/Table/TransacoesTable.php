@@ -81,18 +81,76 @@ class TransacoesTable extends Table {
     return $this->find('All')->where($where);
   }
 
-  public function getQtdItensPendentesCliente($id_cliente) {
+  public function getItensPendentesCliente($id_cliente) {
     $where = "id_cliente = {$id_cliente}";
     return $this->find('All')
-            ->where($where)
-            ->count();
+            ->where($where);
   }
 
-  public function getQtdItensPendentesMediador($id_mediador) {
+  /**
+   * Pega a quantidade de itens pendentes por cliente
+   * @param type $id_cliente
+   * @return type
+   */
+  public function getQtdItensPendentesCliente($id_cliente) {
+    return $this->getItensPendentesCliente($id_cliente)->count();
+  }
+
+  /**
+   * Pega os itens pendentes por mediador
+   * @param type $id_mediador
+   * @return type
+   */
+  public function getItensPendentesMediador($id_mediador) {
     $where = "id_mediador = {$id_mediador}";
     return $this->find('All')
-            ->where($where)
-            ->count();
+            ->where($where);
+  }
+
+  /**
+   * Pega a quantidade de itens pendentes do mediador informado
+   * @param type $id_mediador
+   * @return type
+   */
+  public function getQtdItensPendentesMediador($id_mediador) {
+    return $this->getItensPendentesMediador($id_mediador)->count();
+  }
+  
+  /**
+   * Pega a ultima transação do usuário
+   * @param type $id_cliente
+   * @return type
+   */
+  public function getLastTransaction($id_cliente) {
+    $fields = array("id_transacao", "descricao", "id_cliente", "id_mediador");
+    $where = "id_cliente = {$id_cliente}";
+    return $this->find('All')
+        ->select($fields)
+        ->where($where)
+        ->first();
+  }
+  
+  /**
+   * Valida se existe uma transação ativa com os dados informados
+   * @param type $id_transacao
+   * @param type $transacao_pass
+   * @param type $id_usuario
+   * @return boolean
+   */
+  public function validateTransaction($id_transacao, $transacao_pass, $id_usuario) {
+    $where = "id_transacao = {$id_transacao} "
+    . "AND transacao_pass = '{$transacao_pass}' "
+    . "AND status_transacao = 1 AND id_cliente = {$id_usuario}";
+    
+    $result = $this->find('All')
+        ->where($where)
+        ->first();
+    
+    if (sizeof($result) > 0) {
+      return True;
+    } else {
+      return False;
+    }
   }
 
 }

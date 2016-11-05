@@ -20,13 +20,13 @@ class dashboardController extends AppController{
     $user_id = $this->Auth->user('id');
     $transacoes = new Render();
     $transacoes_pendentes_cli = $transacoes->renderTransacoesPendentes($user_id);
+    //var_dump($this->Auth->user()); die();
     
     if ($this->Auth->user('tipo') === 1) {
       $transacoes_pendentes_med = $transacoes->renderTransacoesPendentesMediador($user_id);
-      var_dump($transacoes_pendentes_med);
     } else {
-      
+      $this->redirect(array("controller" => "Transacoes", "action" => "authtransacaocliente"));
     }
-    var_dump($transacoes_pendentes_cli); die();
+    
   }
 }
