@@ -2241,3 +2241,137 @@ Stack Trace:
 #1 {main}
 
 
+2017-01-09 23:17:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:17:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:19:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:19:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:19:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:19:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:19:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:20:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:20:35 Error: [Error] Call to a member function user() on boolean
+Request URL: /dashboard
+Client IP: 172.17.0.1
+Stack Trace:
+#0 [internal function]: App\Controller\dashboardController->index()
+#1 /var/www/html/app/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /var/www/html/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /var/www/html/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\dashboardController))
+#4 /var/www/html/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2017-01-09 23:20:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:20:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:20:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Userr could not be found.
+Exception Attributes: array (
+  'class' => 'Userr',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /userr
+Client IP: 172.17.0.1
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2017-01-09 23:20:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:20:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:20:59 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users
+Client IP: 172.17.0.1
+Stack Trace:
+#0 /var/www/html/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\usersController))
+#2 /var/www/html/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2017-01-09 23:21:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:21:22 Error: [Error] Call to a member function user() on boolean
+Request URL: /usuarios
+Client IP: 172.17.0.1
+Stack Trace:
+#0 /var/www/html/app/src/Controller/UsuariosController.php(24): App\Controller\AppController->validadeAdmin()
+#1 /var/www/html/app/vendor/cakephp/cakephp/src/Event/EventManager.php(386): App\Controller\usuariosController->beforeFilter(Object(Cake\Event\Event))
+#2 /var/www/html/app/vendor/cakephp/cakephp/src/Event/EventManager.php(356): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 /var/www/html/app/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 /var/www/html/app/vendor/cakephp/cakephp/src/Controller/Controller.php(491): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#5 /var/www/html/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#6 /var/www/html/app/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\usuariosController))
+#7 /var/www/html/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2017-01-09 23:21:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:21:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:21:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:22:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:22:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:22:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:22:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:22:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:22:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Agendas could not be found.
+Exception Attributes: array (
+  'class' => 'Agendas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /agendas/
+Referer URL: http://local.phpsafebox.com/transacoes
+Client IP: 172.17.0.1
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2017-01-09 23:22:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:22:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:22:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:22:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Table could not be found.
+Exception Attributes: array (
+  'class' => 'Table',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /table/datatable.html
+Referer URL: http://local.phpsafebox.com/transacoes
+Client IP: 172.17.0.1
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2017-01-09 23:23:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:23:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:23:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:23:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:23:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:23:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:23:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-01-09 23:23:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /images/loading.gif
+Referer URL: http://local.phpsafebox.com/transacoes/edit/10
+Client IP: 172.17.0.1
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2017-01-09 23:23:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.

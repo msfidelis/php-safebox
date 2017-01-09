@@ -1,20 +1,20 @@
-db:
-     image: mysql
-     ports:
-         - "3306:3306"
-     volumes:
-         - mysql:/var/lib/mysql
+app:
+  build: ./Docker/PHP7
+  volumes:
+    - ./app:/var/www/html/app
+    - ./Docker/PHP7/etc/apache2/hosts.conf:/etc/apache2/sites-enabled/hosts.conf
+  ports:
+    - "80:80"
+  links:
+    - mysql
 
-
-web:
-    image: apachephp5
-    environment:
-         - VIRTUAL_HOST=local.abacate.com.br
-    ports:
-         - "80:80"
-    volumes:
-         - app/:/var/www/html/
-    links:
-         - db
-
-
+mysql:
+  image: mysql:5.7
+  restart: always
+  ports:
+    - "3306:3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_DATABASE=phpsafebox
+  volumes:
+    - ./Docker/MySQL/data/:/var/lib/mysql
